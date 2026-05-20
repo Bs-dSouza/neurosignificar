@@ -1,0 +1,251 @@
+/* ===== HERO ===== */
+.hero {
+    width: 100%;
+    background-color: #3a2a1a;
+    text-align: center;
+    padding: 70px 40px;
+    box-sizing: border-box;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e9eba2;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-family: "Noto Serif Display", serif;
+    font-size: 2.4rem;
+    color: #fff;
+    margin: 0 0 16px;
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 1.05rem;
+    color: #c8b89a;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* ===== CARDS DE CONTATO ===== */
+.cardsContato {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    background-color: #f5f0e8;
+}
+
+.card {
+    padding: 40px 30px;
+    text-align: center;
+    border-right: 1px solid #e0d8cc;
+    box-sizing: border-box;
+    transition: background 0.3s;
+}
+
+.card:last-child {
+    border-right: none;
+}
+
+.card:hover {
+    background-color: #ede5d5;
+}
+
+.cardIcone {
+    font-size: 2rem;
+    color: #9a7a5a;
+    margin-bottom: 14px;
+    display: block;
+    margin: 0 auto 14px;
+}
+
+.card h3 {
+    font-family: "Noto Serif Display", serif;
+    font-size: 1.1rem;
+    color: #3a2a1a;
+    margin: 0 0 10px;
+}
+
+.card p,
+.card a {
+    font-size: 0.95rem;
+    color: #5a4a3a;
+    line-height: 1.7;
+    margin: 0;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #25D366;
+    text-decoration: underline;
+}
+
+/* ===== MAPA + REDES ===== */
+.mapaSecao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 480px;
+}
+
+.mapaWrapper {
+    width: 60%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.mapaWrapper iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    border: none;
+    display: block;
+}
+
+.redesSociais {
+    width: 40%;
+    background-color: #fff;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redesSociais h2 {
+    font-family: "Noto Serif Display", serif;
+    font-size: 1.8rem;
+    color: #3a2a1a;
+    margin: 0 0 10px;
+}
+
+.redesSociais > p {
+    font-size: 0.95rem;
+    color: #7a6a5a;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.redesBotoes {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 36px;
+}
+
+.btnInstagram,
+.btnFacebook {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.btnInstagram:hover,
+.btnFacebook:hover {
+    opacity: 0.85;
+    transform: translateX(4px);
+}
+
+.btnInstagram {
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #fff;
+}
+
+.btnFacebook {
+    background-color: #1877f2;
+    color: #fff;
+}
+
+.infoExtra {
+    border-top: 1px solid #e0d8cc;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infoExtra p {
+    font-size: 0.95rem;
+    color: #5a4a3a;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===== SCROLL REVEAL ===== */
+[data-reveal="fade-up"],
+[data-reveal="fade-left"],
+[data-reveal="fade-right"] {
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-reveal="fade-up"]    { transform: translateY(50px); }
+[data-reveal="fade-left"]  { transform: translateX(-70px); }
+[data-reveal="fade-right"] { transform: translateX(70px); }
+
+.revealFadeUp,
+.revealFadeLeft,
+.revealFadeRight {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+    .cardsContato {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        border-right: none;
+        border-bottom: 1px solid #e0d8cc;
+    }
+
+    .card:nth-child(odd) {
+        border-right: 1px solid #e0d8cc;
+    }
+
+    .mapaSecao {
+        flex-direction: column;
+    }
+
+    .mapaWrapper {
+        width: 100%;
+    }
+
+    .mapaWrapper iframe {
+        min-height: 350px;
+    }
+
+    .redesSociais {
+        width: 100%;
+        padding: 36px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.7rem; }
+
+    .cardsContato {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        border-right: none;
+    }
+
+    .card:nth-child(odd) {
+        border-right: none;
+    }
+}

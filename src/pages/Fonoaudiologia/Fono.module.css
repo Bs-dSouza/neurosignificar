@@ -1,0 +1,235 @@
+/* ===== PÁGINA FONOAUDIOLOGIA ===== */
+.pagina {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== HERO ===== */
+.hero {
+  width: 100%;
+  background: linear-gradient(135deg, #eaf3e6 0%, #c8e6c9 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 20px 60px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #2e5931;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #1e3d20;
+  font-family: "Noto Serif Display", serif;
+  margin: 0 0 14px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #4a6a4c;
+  max-width: 600px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===== BLOCOS ===== */
+.bloco {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 460px;
+  align-items: stretch;
+}
+
+.blocoInvertido {
+  flex-direction: row-reverse;
+  background-color: #eaf3e6;
+}
+
+/* Imagem */
+.imagemBloco {
+  width: 45%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.imagemBloco img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.imagemBloco img:hover {
+  transform: scale(1.04);
+}
+
+/* Texto */
+.textoBloco {
+  width: 55%;
+  padding: 50px 60px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.blocoInvertido .textoBloco {
+  background-color: #eaf3e6;
+}
+
+.textoBloco h2 {
+  font-size: 1.9rem;
+  color: #1e3d20;
+  font-family: "Noto Serif Display", serif;
+  margin: 0 0 20px;
+}
+
+.textoBloco p {
+  font-size: 1rem;
+  color: #3a5a3c;
+  line-height: 1.8;
+  margin: 0 0 14px;
+}
+
+/* ===== LISTA ===== */
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lista li {
+  font-size: 0.97rem;
+  color: #3a5a3c;
+  line-height: 1.7;
+  padding-left: 18px;
+  position: relative;
+}
+
+.lista li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4a9e50;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.lista li em {
+  color: #5a7a5c;
+  font-style: italic;
+}
+
+/* ===== DESTAQUE FINAL ===== */
+.destaque {
+  background-color: #c8e6c9;
+  border-left: 4px solid #4a9e50;
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.97rem !important;
+  color: #1e3d20 !important;
+  margin-top: 4px !important;
+}
+
+/* ===== CTA ===== */
+.cta {
+  width: 100%;
+  background-color: #2e5931;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  font-family: "Noto Serif Display", serif;
+  margin: 0 0 12px;
+}
+
+.cta p {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin: 0 0 28px;
+}
+
+.btnContato {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #eaf3e6;
+  color: #2e5931;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnContato:hover {
+  background-color: #c8e6c9;
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .bloco,
+  .blocoInvertido {
+    flex-direction: column;
+  }
+
+  .imagemBloco {
+    width: 100%;
+    height: 300px;
+  }
+
+  .textoBloco {
+    width: 100%;
+    padding: 36px 28px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .textoBloco h2 {
+    font-size: 1.4rem;
+  }
+
+  .textoBloco {
+    padding: 28px 18px;
+  }
+
+  .imagemBloco {
+    height: 240px;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+}

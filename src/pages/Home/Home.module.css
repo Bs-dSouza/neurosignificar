@@ -1,0 +1,375 @@
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9a7a5a;
+  margin-bottom: 12px;
+}
+
+.tagClaro {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e9eba2;
+  margin-bottom: 12px;
+}
+
+/* ===== QUEM SOMOS ===== */
+.quemSomos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  min-height: 440px;
+  background-color: #f5f0e8;
+  overflow: hidden;
+}
+
+.quemSomosTexto {
+  width: 55%;
+  padding: 60px 70px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.quemSomosTexto h2 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 2rem;
+  color: #3a2a1a;
+  margin: 0 0 20px;
+  line-height: 1.3;
+}
+
+.quemSomosTexto p {
+  font-size: 1rem;
+  color: #5a4a3a;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.btnSaibaMais {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #3a2a1a;
+  color: #e9eba2;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btnSaibaMais:hover {
+  background-color: #5a3e28;
+  transform: translateY(-2px);
+}
+
+.quemSomosImagem {
+  width: 45%;
+  height: 440px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.quemSomosImagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.quemSomosImagem img:hover {
+  transform: scale(1.04);
+}
+
+/* ===== DIFERENCIAIS ===== */
+.diferenciais {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  background-color: #3a2a1a;
+  margin-top: 45px;
+}
+
+.diferencial {
+  padding: 44px 20px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  box-sizing: border-box;
+}
+
+.diferencial:last-child {
+  border-right: none;
+}
+
+.diferencialNum {
+  display: block;
+  font-family: "Noto Serif Display", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #e9eba2;
+  margin-bottom: 8px;
+}
+
+.diferencial p {
+  font-size: 0.95rem;
+  color: #c8b89a;
+  margin: 0;
+}
+
+/* ===== ESPECIALIDADES ===== */
+.especialidades {
+  width: 100%;
+  padding: 70px 60px;
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.especialidades h2 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 2rem;
+  color: #3a2a1a;
+  margin: 0 0 8px;
+}
+
+.especialidadesSubtitulo {
+  font-size: 1rem;
+  color: #7a6a5a;
+  margin-bottom: 44px;
+}
+
+.cardsEspecialidades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.cardEsp {
+  background-color: #f5f0e8;
+  border-radius: 14px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cardEsp:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.10);
+}
+
+.cardEspIcone {
+  font-size: 2.4rem;
+  color: #9a7a5a;
+  margin-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardEsp h3 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.2rem;
+  color: #3a2a1a;
+  margin: 0 0 12px;
+}
+
+.cardEsp p {
+  font-size: 0.93rem;
+  color: #5a4a3a;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.btnVerTodas {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid #3a2a1a;
+  color: #3a2a1a;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btnVerTodas:hover {
+  background-color: #3a2a1a;
+  color: #e9eba2;
+}
+
+/* ===== COMO FUNCIONA ===== */
+.comoFunciona {
+  width: 100%;
+  padding: 70px 60px;
+  box-sizing: border-box;
+  background-color: #f5f0e8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comoFunciona h2 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 2rem;
+  color: #3a2a1a;
+  margin: 0 0 44px;
+}
+
+.passos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+}
+
+.passo {
+  flex: 1;
+  max-width: 280px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.passoBadge {
+  display: inline-block;
+  font-family: "Noto Serif Display", serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #d0c1a5;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.passo h3 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.1rem;
+  color: #3a2a1a;
+  margin: 0 0 10px;
+}
+
+.passo p {
+  font-size: 0.93rem;
+  color: #5a4a3a;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.passoSeta {
+  font-size: 2rem;
+  color: #c8b89a;
+  flex-shrink: 0;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
+/* ===== CTA ===== */
+.cta {
+  width: 100%;
+  background-color: #3a2a1a;
+  text-align: center;
+  padding: 70px 40px;
+  box-sizing: border-box;
+}
+
+.cta h2 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 2.2rem;
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+.cta p {
+  font-size: 1rem;
+  color: #c8b89a;
+  margin-bottom: 36px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.btnWhatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+}
+
+.btnWhatsapp:hover {
+  background-color: #1da851;
+  transform: translateY(-3px);
+}
+
+/* ===== SCROLL REVEAL — estados iniciais ===== */
+[data-reveal="fade-up"],
+[data-reveal="fade-left"],
+[data-reveal="fade-right"],
+[data-reveal="zoom"] {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+[data-reveal="fade-up"]    { transform: translateY(50px); }
+[data-reveal="fade-left"]  { transform: translateX(-70px); }
+[data-reveal="fade-right"] { transform: translateX(70px); }
+[data-reveal="zoom"]       { transform: scale(0.9); }
+
+/* estados ativos (adicionados pelo IntersectionObserver) */
+.revealFadeUp,
+.revealFadeLeft,
+.revealFadeRight,
+.revealZoom {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .quemSomos { flex-direction: column; }
+  .quemSomosTexto { width: 100%; padding: 40px 24px; }
+  .quemSomosImagem { width: 100%; height: 280px; }
+  .diferenciais { grid-template-columns: repeat(2, 1fr); }
+  .diferencial { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .diferencial:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.1); }
+  .cardsEspecialidades { grid-template-columns: 1fr; }
+  .especialidades { padding: 50px 24px; }
+  .comoFunciona { padding: 50px 24px; }
+  .passos { flex-direction: column; gap: 32px; }
+  .passoSeta { transform: rotate(90deg); margin: 0; }
+}
+
+@media (max-width: 480px) {
+  .quemSomosTexto h2 { font-size: 1.6rem; }
+  .cta h2 { font-size: 1.7rem; }
+  .diferenciais { grid-template-columns: repeat(2, 1fr); }
+}

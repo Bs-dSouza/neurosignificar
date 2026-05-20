@@ -1,0 +1,216 @@
+
+/* ===== FOOTER ===== */
+.footer {
+  width: 100%;
+  background-color: #3a2a1a;
+  color: #f5f0e8;
+  font-family: 'Noto Serif Display', Georgia, serif;
+}
+
+/* --- Parte superior: 4 colunas --- */
+.footerTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 80px;
+}
+
+/* --- Coluna Logo --- */
+.colLogo {
+  flex: 1.4;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logoFooter {
+  width: 190px;
+  height: auto;
+  filter: brightness(1.05);
+}
+
+.descricao {
+  font-size: 0.92rem;
+  color: #c0a888;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* --- Ícones redes sociais --- */
+.sociais {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.socialBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f5f0e8;
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: background-color 0.25s, color 0.25s, transform 0.2s;
+}
+
+.socialBtn:hover {
+  background-color: #e9eba2;
+  color: #3a2a1a;
+  transform: translateY(-3px);
+}
+
+.socialWa:hover {
+  background-color: #25d366;
+  color: #fff;
+}
+
+/* --- Colunas de Links --- */
+.colLinks {
+  flex: 0.8;
+  min-width: 155px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.colTitulo {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #e9eba2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.linksList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linksList li a {
+  color: #c0a888;
+  text-decoration: none;
+  font-size: 0.93rem;
+  transition: color 0.2s, padding-left 0.2s;
+}
+
+.linksList li a:hover {
+  color: #e9eba2;
+  padding-left: 5px;
+}
+
+/* --- Coluna Contato --- */
+.colContato {
+  flex: 1.3;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contatoList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contatoList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #c0a888;
+  line-height: 1.55;
+}
+
+.contatoIcone {
+  color: #e9eba2;
+  font-size: 1rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.contatoList a {
+  color: #c0a888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contatoList a:hover {
+  color: #e9eba2;
+}
+
+/* --- Barra inferior --- */
+.footerBottom {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 16px 40px;
+}
+
+.footerBottom p {
+  margin: 0;
+  font-size: 0.83rem;
+  color: #7a6a5a;
+  letter-spacing: 0.02em;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  .footerTop {
+    padding: 50px 50px;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .logoFooter {
+    width: 160px;
+  }
+
+  .colLogo,
+  .colLinks,
+  .colContato {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerTop {
+    padding: 30px 20px;
+    gap: 26px;
+  }
+
+  .logoFooter {
+    width: 140px;
+  }
+
+  .colTitulo {
+    font-size: 0.82rem;
+  }
+
+  .footerBottom {
+    padding: 14px 20px;
+  }
+}

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ===== NAVBAR PRINCIPAL =====  #e9eba2  */
+.navbar {
+  width: 100%;
+  background-color: #f5f0e8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 0px 0px 30px 30px;
+}
+
+/* CONTAINER FLEX: logo esquerda | menu direita */
+.conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  min-height: 110px;
+}
+
+/* ===== LOGO À ESQUERDA ===== */
+.nome_logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nome_logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logotipo {
+  width: 250px;
+  height: auto;
+}
+
+/* ===== MENU À DIREITA ===== */
+.listBrand {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+  align-items: center;
+}
+
+.Item_Menu a {
+  text-decoration: none;
+  color: #3a2a1a;
+  font-size: 1.05em;
+  font-family: "Noto Serif Display", serif;
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.Item_Menu a:hover {
+  background: #d0c1a5;
+  color: #1a0e00;
+}
+
+/* Efeito sublinhado animado */
+.Item_Menu a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #b09070;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.Item_Menu a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* ===== BOTÃO HAMBURGUER (oculto no desktop) ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #5a3e28;
+  border-radius: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animação X quando aberto */
+.barraAberta1 {
+  transform: translateY(8px) rotate(45deg);
+}
+.barraAberta2 {
+  opacity: 0;
+}
+.barraAberta3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .conteiner {
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    min-height: unset;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Menu oculto por padrão no mobile */
+  .listBrand {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding: 8px 0 16px;
+    border-top: 1px solid #c8ca7a;
+  }
+
+  /* Menu aberto */
+  .menuOpen {
+    display: flex;
+  }
+
+  .Item_Menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Item_Menu a {
+    display: block;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+
+  .logotipo {
+    width: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conteiner {
+    padding: 10px 14px;
+  }
+
+  .logotipo {
+    width: 150px;
+  }
+
+  .Item_Menu a {
+    font-size: 0.95em;
+    padding: 10px 16px;
+  }
+}

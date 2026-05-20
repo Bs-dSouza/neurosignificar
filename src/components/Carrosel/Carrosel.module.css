@@ -1,0 +1,82 @@
+.carroselCustom {
+  width: 100%;
+  border-radius: 20px;
+  margin: 5px auto;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  background: #fff;
+  margin-top: 30px;
+}
+
+.carousel_item {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s;
+}
+
+.slide1 {
+  /* background: linear-gradient(135deg, #e9e9e9 60%, #b3c6e7 100%); */
+  background-image: url('../../Imagens/terapeutaCarrosel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slide2 {
+  background-image: url('../../Imagens/fono.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+.slide3 {
+  background-image: url('../../Imagens/fotoClinica.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-caption {
+  background: rgba(255,255,255,0.85);
+  border-radius: 0 0 20px 20px;
+  color: #222;
+  padding: 24px 0 16px 0;
+  text-shadow: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+.bemVindo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 60px;
+}
+
+.textoInicial{
+    margin-top: 20px;
+    font-size: 1.9rem;
+}
+.paragrafro_Home{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.btn_SaibaMais{
+    margin-top:30px;
+    width: 90px;
+    height:50px;
+    border-radius: 30px;
+    background-color:#f5f0e8;
+    font-size: 0.9rem;
+    padding: px;
+}
+.btn_SaibaMais:hover{
+    background-color: #d4cbbc;
+}
