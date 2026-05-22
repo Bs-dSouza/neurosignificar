@@ -140,7 +140,8 @@
 }
 
 .btnInstagram,
-.btnFacebook {
+.btnFacebook,
+.btnTiktok {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -153,7 +154,8 @@
 }
 
 .btnInstagram:hover,
-.btnFacebook:hover {
+.btnFacebook:hover,
+.btnTiktok:hover {
     opacity: 0.85;
     transform: translateX(4px);
 }
@@ -165,6 +167,11 @@
 
 .btnFacebook {
     background-color: #1877f2;
+    color: #fff;
+}
+
+.btnTiktok {
+    background-color: #010101;
     color: #fff;
 }
 

@@ -28,55 +28,87 @@
   background-position: center top;
 }
 .slide3 {
-  background-image: url('../../Imagens/fotoClinica.jpeg');
+  background-image: url('../../Imagens/imagem.png');
   background-size: cover;
   background-position: center;
 }
 
-.carousel-caption {
-  background: rgba(255,255,255,0.85);
-  border-radius: 0 0 20px 20px;
-  color: #222;
-  padding: 24px 0 16px 0;
+/* ===== OVERRIDE BOOTSTRAP CAPTION POSITIONING ===== */
+.carroselCustom :global(.carousel-caption) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  background: linear-gradient(
+    to right,
+    rgba(30, 20, 10, 0.62) 45%,
+    rgba(30, 20, 10, 0.15) 100%
+  );
+  text-align: left;
   text-shadow: none;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
-.carousel-caption h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
+.captionContent {
+  max-width: 580px;
+  padding: 0 0 0 8%;
 }
 
-.carousel-caption p {
-  font-size: 1.1rem;
+.tagline {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #f5f0e8;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(245, 240, 232, 0.5);
+  border-radius: 50px;
+  padding: 5px 16px;
+  margin-bottom: 16px;
+}
+
+.textoInicial {
+  font-size: 2.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  letter-spacing: -0.2px;
+}
+
+.paragrafro_Home {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.75;
   margin-bottom: 0;
-}
-.bemVindo {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-top: 60px;
+  font-weight: 400;
+  max-width: 460px;
 }
 
-.textoInicial{
-    margin-top: 20px;
-    font-size: 1.9rem;
+.btn_SaibaMais {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 14px 38px;
+  border-radius: 50px;
+  background-color: #f5f0e8;
+  color: #3a2a1a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: 2px solid #f5f0e8;
+  cursor: pointer;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
 }
-.paragrafro_Home{
-    margin-top: 10px;
-    font-size: 1rem;
-}
-.btn_SaibaMais{
-    margin-top:30px;
-    width: 90px;
-    height:50px;
-    border-radius: 30px;
-    background-color:#f5f0e8;
-    font-size: 0.9rem;
-    padding: px;
-}
-.btn_SaibaMais:hover{
-    background-color: #d4cbbc;
+
+.btn_SaibaMais:hover {
+  background-color: transparent;
+  color: #f5f0e8;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
 }

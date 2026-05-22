@@ -1,16 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* ===== NAVBAR PRINCIPAL =====  #e9eba2  */
-.navbar {
-  width: 100%;
-  background-color: #f5f0e8;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+/* ===== WRAPPER STICKY (topbar + navbar juntos) ===== */
+.wrapper {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
+}
+
+/* ===== TOPBAR — CONSCIENTIZAÇÃO TEA ===== */
+.topbar {
+  background: linear-gradient(135deg, #5a3520 0%, #8b5e3c 100%);
+  color: #faf5ed;
+  text-align: center;
+  padding: 7px 20px;
+  font-size: 0.76rem;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+
+.topbarText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.topbarText strong {
+  font-weight: 700;
+}
+
+.topbarDivider {
+  margin: 0 8px;
+  opacity: 0.55;
+}
+
+/* ===== NAVBAR PRINCIPAL ===== */
+.navbar {
+  width: 100%;
+  background-color: #f5f0e8;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 30px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Acento colorido (peças do puzzle do logo) no rodapé da navbar */
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #f2a8b0 0%,
+    #f5dc7a 33%,
+    #95c88a 66%,
+    #8ecbe8 100%
+  );
+  border-radius: 0 0 30px 30px;
 }
 
 /* CONTAINER FLEX: logo esquerda | menu direita */
@@ -57,8 +111,10 @@
 .Item_Menu a {
   text-decoration: none;
   color: #3a2a1a;
-  font-size: 1.05em;
-  font-family: "Noto Serif Display", serif;
+  font-size: 0.95em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2px;
   position: relative;
   display: inline-block;
   padding: 8px 16px;
@@ -68,7 +124,7 @@
 }
 
 .Item_Menu a:hover {
-  background: #d0c1a5;
+  background: #e8dece;
   color: #1a0e00;
 }
 
@@ -77,10 +133,10 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #b09070;
+  background-color: #8b5e3c;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -89,6 +145,31 @@
 .Item_Menu a:hover::after {
   visibility: visible;
   transform: scaleX(1);
+}
+
+/* ===== BOTÃO CTA — AGENDE UMA CONSULTA ===== */
+.Item_Cta a {
+  background-color: #c8674a;
+  color: #ffffff !important;
+  border: 2px solid #c8674a;
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: 0.92em;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 12px rgba(200, 103, 74, 0.3);
+}
+
+.Item_Cta a:hover {
+  background-color: transparent !important;
+  color: #c8674a !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(200, 103, 74, 0.35);
+}
+
+.Item_Cta a::after {
+  display: none;
 }
 
 /* ===== BOTÃO HAMBURGUER (oculto no desktop) ===== */
@@ -136,6 +217,16 @@
     display: flex;
   }
 
+  /* Topbar: texto abreviado no mobile */
+  .topbarDivider {
+    display: none;
+  }
+
+  .topbar {
+    font-size: 0.72rem;
+    padding: 6px 12px;
+  }
+
   /* Menu oculto por padrão no mobile */
   .listBrand {
     display: none;
@@ -143,7 +234,7 @@
     width: 100%;
     gap: 0;
     padding: 8px 0 16px;
-    border-top: 1px solid #c8ca7a;
+    border-top: 1px solid #d0c8ba;
   }
 
   /* Menu aberto */
@@ -161,6 +252,14 @@
     padding: 12px 20px;
     border-radius: 4px;
     font-size: 1em;
+  }
+
+  .Item_Cta a {
+    margin: 8px 20px 4px;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    padding: 12px 20px;
   }
 
   .logotipo {

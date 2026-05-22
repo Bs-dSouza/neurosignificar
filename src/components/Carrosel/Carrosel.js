@@ -17,22 +17,19 @@ const Carrosel = () => {
         <Carousel.Item>
           <div className={`${styles.carousel_item} ${styles.slide1}`}>
             <Carousel.Caption>
-              <div>
+              <div className={styles.captionContent}>
+                <span className={styles.tagline}>Clínica Multidisciplinar</span>
                 <h2 className={styles.textoInicial}>
-                  Cuidando com amor e ciência,<br></br> para o desenvolvimento
-                  de cada criança.
+                  Cuidado especializado para o desenvolvimento pleno de cada criança
                 </h2>
                 <p className={styles.paragrafro_Home}>
-                  Nossa clínica multidisciplinar é especializada<br></br> no
-                  atendimento a pessoas com Transtorno do<br></br> Espectro
-                  Autista (TEA), oferecendo suporte<br></br> individualizado
-                  para cada fase da vida.
+                  Somos uma clínica dedicada ao atendimento de crianças com Transtorno do Espectro Autista (TEA), com abordagem humanizada e baseada em evidências científicas.
                 </p>
                 <button
                   className={styles.btn_SaibaMais}
                   onClick={() => navigate("/about")}
                 >
-                  Saiba Mais
+                  Conheça a Clínica
                 </button>
               </div>
             </Carousel.Caption>
@@ -41,20 +38,19 @@ const Carrosel = () => {
         <Carousel.Item>
           <div className={`${styles.carousel_item} ${styles.slide2}`}>
             <Carousel.Caption>
-              <div>
+              <div className={styles.captionContent}>
+                <span className={styles.tagline}>Nossa Equipe</span>
                 <h2 className={styles.textoInicial}>
-                  Especialistas em cada etapa<br /> do desenvolvimento
+                  Uma equipe completa para cada etapa do desenvolvimento
                 </h2>
                 <p className={styles.paragrafro_Home}>
-                  Psicologia ABA, Fonoaudiologia e Psicopedagogia<br />
-                  em um só lugar, com profissionais dedicados<br />
-                  ao desenvolvimento do seu filho.
+                  Psicologia ABA, Fonoaudiologia e Psicopedagogia integradas em um único espaço, com profissionais comprometidos com o progresso de cada criança.
                 </p>
                 <button
                   className={styles.btn_SaibaMais}
                   onClick={() => navigate("/servico")}
                 >
-                  Nossos Serviços
+                  Ver Serviços
                 </button>
               </div>
             </Carousel.Caption>
@@ -63,20 +59,19 @@ const Carrosel = () => {
         <Carousel.Item>
           <div className={`${styles.carousel_item} ${styles.slide3}`}>
             <Carousel.Caption>
-              <div>
+              <div className={styles.captionContent}>
+                <span className={styles.tagline}>Agende sua Consulta</span>
                 <h2 className={styles.textoInicial}>
-                  Agende uma avaliação e<br /> dê o primeiro passo
+                  Dê o primeiro passo rumo ao desenvolvimento
                 </h2>
                 <p className={styles.paragrafro_Home}>
-                  Atendemos de forma personalizada.<br />
-                  Venha conhecer nossa clínica e conversar<br />
-                  com nossa equipe especializada.
+                  Nossa equipe está pronta para acolher você e sua família com atenção e dedicação. Venha nos conhecer e inicie essa jornada conosco.
                 </p>
                 <button
                   className={styles.btn_SaibaMais}
                   onClick={() => navigate("/contato")}
                 >
-                  Entre em Contato
+                  Fale Conosco
                 </button>
               </div>
             </Carousel.Caption>

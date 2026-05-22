@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./Contato.module.css";
 import { FaWhatsapp, FaInstagram, FaFacebook, FaMapMarkerAlt, FaClock, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
 
 function useScrollReveal(selector, animClass) {
   useEffect(() => {
@@ -87,7 +88,23 @@ const Contato = () => {
               rel="noopener noreferrer"
               className={styles.btnInstagram}
             >
-              <FaInstagram /> Instagram
+              <FaInstagram /> Instagram da Clínica
+            </a>
+            <a
+              href="https://www.tiktok.com/@psicologainfantil.miria"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.btnTiktok}
+            >
+              <FaTiktok /> TikTok
+            </a>
+            <a
+              href="https://www.instagram.com/miriasouza.psicologa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.btnInstagram}
+            >
+              <FaInstagram /> Instagram — Psi. Miriã Souza
             </a>
           </div>
           <div className={styles.infoExtra}>

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter,BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 //components
@@ -20,7 +20,7 @@ import PsiPedagogia from "./pages/PsicoPedagogia/PsiPedagogia";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <NavBar />
         <ScrollToTop />
         <div className="container">
@@ -38,7 +38,7 @@ function App() {
         </div>
         <Footer />
         <Whatsapp />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
