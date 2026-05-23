@@ -29,3 +29,11 @@
   background: #128c7e45;
   animation-play-state: paused;
 }
+
+@media (max-width: 480px) {
+  .whatsappFixo {
+    right: 16px;
+    bottom: 16px;
+    padding: 8px;
+  }
+}

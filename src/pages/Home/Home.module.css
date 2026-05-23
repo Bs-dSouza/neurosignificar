@@ -366,10 +366,26 @@
   .comoFunciona { padding: 50px 24px; }
   .passos { flex-direction: column; gap: 32px; }
   .passoSeta { transform: rotate(90deg); margin: 0; }
+  .cta { padding: 60px 24px; }
+}
+
+@media (max-width: 768px) {
+  .diferencialNum { font-size: 2.2rem; }
+  .especialidades h2 { font-size: 1.7rem; }
+  .comoFunciona h2 { font-size: 1.7rem; }
+  .cardEsp { padding: 30px 20px; }
+  .cta { padding: 50px 20px; }
+  .cta h2 { font-size: 1.9rem; }
+  .passo { max-width: 100%; padding: 0 16px; }
 }
 
 @media (max-width: 480px) {
   .quemSomosTexto h2 { font-size: 1.6rem; }
-  .cta h2 { font-size: 1.7rem; }
+  .cta h2 { font-size: 1.6rem; }
+  .cta { padding: 44px 16px; }
   .diferenciais { grid-template-columns: repeat(2, 1fr); }
+  .especialidades { padding: 36px 14px; }
+  .comoFunciona { padding: 36px 14px; }
+  .cardEsp { padding: 24px 16px; }
+  .btnWhatsapp { padding: 14px 24px; font-size: 0.95rem; }
 }

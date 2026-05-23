@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 body{
   background-color: #ffffff;
-  overflow: auto;
+  overflow-x: hidden;
+  max-width: 100%;
 }
