@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/neurosignificar/static/css/main.23b26b89.css",
+    "main.css": "/neurosignificar/static/css/main.eb5c6ae5.css",
     "main.js": "/neurosignificar/static/js/main.6da92945.js",
     "static/js/453.a12ea0c4.chunk.js": "/neurosignificar/static/js/453.a12ea0c4.chunk.js",
     "static/media/pedagoga1.jpg": "/neurosignificar/static/media/pedagoga1.ccd4894efc62ebd9f2bf.jpg",
@@ -20,12 +20,12 @@
     "static/media/sala1.jpeg": "/neurosignificar/static/media/sala1.a7422a3ef57eaab984cd.jpeg",
     "static/media/sala2.jpeg": "/neurosignificar/static/media/sala2.bc5a6a6b47bc9cd461b7.jpeg",
     "index.html": "/neurosignificar/index.html",
-    "main.23b26b89.css.map": "/neurosignificar/static/css/main.23b26b89.css.map",
+    "main.eb5c6ae5.css.map": "/neurosignificar/static/css/main.eb5c6ae5.css.map",
     "main.6da92945.js.map": "/neurosignificar/static/js/main.6da92945.js.map",
     "453.a12ea0c4.chunk.js.map": "/neurosignificar/static/js/453.a12ea0c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23b26b89.css",
+    "static/css/main.eb5c6ae5.css",
     "static/js/main.6da92945.js"
   ]
 }
