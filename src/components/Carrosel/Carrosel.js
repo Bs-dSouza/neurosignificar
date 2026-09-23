@@ -18,13 +18,14 @@ const Carrosel = () => {
           <div className={`${styles.carousel_item} ${styles.slide1}`}>
             <Carousel.Caption>
               <div className={styles.captionContent}>
-                <span className={styles.tagline}>Clínica Multidisciplinar</span>
-                <h2 className={styles.textoInicial}>
-                  Cuidado especializado para o desenvolvimento pleno de cada criança
-                </h2>
-                <p className={styles.paragrafro_Home}>
-                  Somos uma clínica dedicada ao atendimento de crianças com Transtorno do Espectro Autista (TEA), com abordagem humanizada e baseada em evidências científicas.
-                </p>
+                <div className={styles.heroCopy}>
+                  <h2 className={styles.textoInicial}>
+                    Cuidado especializado para o desenvolvimento pleno de cada criança
+                  </h2>
+                  <p className={styles.paragrafro_Home}>
+                    Somos uma clínica dedicada ao atendimento de crianças com Transtorno do Espectro Autista (TEA), com abordagem humanizada e baseada em evidências científicas.
+                  </p>
+                </div>
                 <button
                   className={styles.btn_SaibaMais}
                   onClick={() => navigate("/about")}
@@ -39,13 +40,14 @@ const Carrosel = () => {
           <div className={`${styles.carousel_item} ${styles.slide2}`}>
             <Carousel.Caption>
               <div className={styles.captionContent}>
-                <span className={styles.tagline}>Nossa Equipe</span>
-                <h2 className={styles.textoInicial}>
-                  Uma equipe completa para cada etapa do desenvolvimento
-                </h2>
-                <p className={styles.paragrafro_Home}>
-                  Psicologia ABA, Fonoaudiologia e Psicopedagogia integradas em um único espaço, com profissionais comprometidos com o progresso de cada criança.
-                </p>
+                <div className={styles.heroCopy}>
+                  <h2 className={styles.textoInicial}>
+                    Uma equipe completa para cada etapa do desenvolvimento
+                  </h2>
+                  <p className={styles.paragrafro_Home}>
+                    Psicologia ABA, Fonoaudiologia e Psicopedagogia integradas em um único espaço, com profissionais comprometidos com o progresso de cada criança.
+                  </p>
+                </div>
                 <button
                   className={styles.btn_SaibaMais}
                   onClick={() => navigate("/servico")}
@@ -60,13 +62,14 @@ const Carrosel = () => {
           <div className={`${styles.carousel_item} ${styles.slide3}`}>
             <Carousel.Caption>
               <div className={styles.captionContent}>
-                <span className={styles.tagline}>Agende sua Consulta</span>
-                <h2 className={styles.textoInicial}>
-                  Dê o primeiro passo rumo ao desenvolvimento
-                </h2>
-                <p className={styles.paragrafro_Home}>
-                  Nossa equipe está pronta para acolher você e sua família com atenção e dedicação. Venha nos conhecer e inicie essa jornada conosco.
-                </p>
+                <div className={styles.heroCopy}>
+                  <h2 className={styles.textoInicial}>
+                    Dê o primeiro passo rumo ao desenvolvimento
+                  </h2>
+                  <p className={styles.paragrafro_Home}>
+                    Nossa equipe está pronta para acolher você e sua família com atenção e dedicação. Venha nos conhecer e inicie essa jornada conosco.
+                  </p>
+                </div>
                 <button
                   className={styles.btn_SaibaMais}
                   onClick={() => navigate("/contato")}

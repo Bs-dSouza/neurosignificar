@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styles from "./Home.module.css";
 import Carrosel from "../../components/Carrosel/Carrosel";
 import { Link } from "react-router-dom";
-import { FaBrain, FaComments, FaBook, FaWhatsapp } from "react-icons/fa";
+import { FaBrain, FaComments, FaBook, FaWhatsapp, FaGraduationCap } from "react-icons/fa";
 import fotoClinica from "../../Imagens/fotoClinica.jpeg";
 
 // Hook de scroll reveal
@@ -106,6 +106,11 @@ const Home = () => {
             <FaBook className={styles.cardEspIcone} />
             <h3>Terapia Ocupacional</h3>
             <p>Intervenção para promover a independência e habilidades funcionais no dia a dia.</p>
+          </div>
+          <div className={styles.cardEsp} data-reveal="fade-up" style={{transitionDelay: "0.25s"}}>
+            <FaGraduationCap className={styles.cardEspIcone} />
+            <h3>Acompanhamento Escolar</h3>
+            <p>Apoio individualizado com foco no comportamento, na aprendizagem, na organização e na rotina escolar.</p>
           </div>
         </div>
         <Link to="/servico" className={styles.btnVerTodas}>Ver todas as especialidades</Link>

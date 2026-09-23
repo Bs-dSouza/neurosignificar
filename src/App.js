@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter,BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 //components
@@ -16,6 +16,8 @@ import Contato from "./pages/Contato/Contato";
 import Psicologia from "./pages/Psicologia/Psicologia";
 import Fono from "./pages/Fonoaudiologia/Fono";
 import PsiPedagogia from "./pages/PsicoPedagogia/PsiPedagogia";
+import TerapiaOcupacional from "./pages/TerapiaOcupacional/TerapiaOcupacional";
+import AvaliacaoNeuropsicologica from "./pages/AvaliacaoNeuropsicologica/AvaliacaoNeuropsicologica";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
               <Route path="/psicologia" element={<Psicologia />} />
               <Route path="/fonoaudiologia" element={<Fono />} />
               <Route path="/psicopedagogia" element={<PsiPedagogia />} />
+              <Route path="/terapia-ocupacional" element={<TerapiaOcupacional />} />
+              <Route path="/avaliacao-neuropsicologica" element={<AvaliacaoNeuropsicologica />} />
               <Route path="/contato" element={<Contato />} />
             </Routes>
           </PageTransition>
