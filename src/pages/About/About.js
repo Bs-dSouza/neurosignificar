@@ -4,7 +4,7 @@ import fachadaPrincipal from "../../Imagens/fachadaPrincipal.png";
 import sala1 from "../../Imagens/sala1.jpeg";
 import sala2 from "../../Imagens/sala2.jpeg";
 import salaTO from "../../Imagens/salaTO.jpeg";
-import ceo from "../../Imagens/ceo.jpeg";
+import ceo from "../../Imagens/ceo.png";
 import clinica1 from "../../Imagens/clinica1.jpeg";
 import clinica2 from "../../Imagens/clinica2.jpeg";
 import clinica3 from "../../Imagens/clinica3.jpeg";
