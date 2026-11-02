@@ -5,5 +5,18 @@
 
 .container{
     width: 100%;
+    padding-top: 150px;
     margin-bottom: 5em; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-top: 115px;
+  }
 }

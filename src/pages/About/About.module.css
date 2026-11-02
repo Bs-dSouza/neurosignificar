@@ -5,6 +5,7 @@
 	align-items: center;
 	width: 100%;
 	min-height: 480px;
+	padding-top: 28px;
 	background-color: #f5f0e8;
 	overflow: hidden;
 }
@@ -448,6 +449,7 @@
 }
 
 @media (max-width: 480px) {
+	.hero { padding-top: 20px; }
 	.heroTexto h1 { font-size: 1.6rem; }
 	.ceoConteudo h2 { font-size: 1.45rem; }
 	.ceoConteudo p { font-size: 0.95rem; }

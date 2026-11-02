@@ -10,13 +10,30 @@ const NavBar = () => {
     <div className={styles.wrapper}>
       {/* Faixa de conscientização — Transtorno do Espectro Autista */}
       <div className={styles.topbar}>
-        <span className={styles.topbarText}>
-          ♾&ensp;Especializados no atendimento ao{" "}
-          <strong>Transtorno do Espectro Autista (TEA)</strong>
-          <span className={styles.topbarDivider}>·</span>Psicologia ABA
-          <span className={styles.topbarDivider}>·</span>Fonoaudiologia
-          <span className={styles.topbarDivider}>·</span>Psicopedagogia
-        </span>
+        <div className={styles.topbarTicker}>
+          <span className={styles.topbarText}>
+            ♾&ensp;Especializados no atendimento ao{" "}
+            <strong>Transtorno do Espectro Autista (TEA)</strong>
+            <span className={styles.topbarDivider}>·</span>Psicologia ABA
+            <span className={styles.topbarDivider}>·</span>Fonoaudiologia
+            <span className={styles.topbarDivider}>·</span>Psicopedagogia
+            <span className={styles.topbarDivider}>·</span>Terapia Ocupacional
+            <span className={styles.topbarDivider}>·</span>Neuropsicologia
+            <span className={styles.topbarDivider}>·</span>Avaliação Neuropsicológica
+            <span className={styles.topbarDivider}>·</span>Acompanhamento Escolar
+          </span>
+          <span className={styles.topbarText} aria-hidden="true">
+            ♾&ensp;Especializados no atendimento ao{" "}
+            <strong>Transtorno do Espectro Autista (TEA)</strong>
+            <span className={styles.topbarDivider}>·</span>Psicologia ABA
+            <span className={styles.topbarDivider}>·</span>Fonoaudiologia
+            <span className={styles.topbarDivider}>·</span>Psicopedagogia
+            <span className={styles.topbarDivider}>·</span>Terapia Ocupacional
+            <span className={styles.topbarDivider}>·</span>Neuropsicologia
+            <span className={styles.topbarDivider}>·</span>Avaliação Neuropsicológica
+            <span className={styles.topbarDivider}>·</span>Acompanhamento Escolar
+          </span>
+        </div>
       </div>
 
       <nav className={styles.navbar}>
