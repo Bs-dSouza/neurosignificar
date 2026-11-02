@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/neurosignificar/static/css/main.b5eefbce.css",
-    "main.js": "/neurosignificar/static/js/main.901cadcf.js",
+    "main.css": "/neurosignificar/static/css/main.5dcb81c1.css",
+    "main.js": "/neurosignificar/static/js/main.ba0249ca.js",
     "static/js/453.a12ea0c4.chunk.js": "/neurosignificar/static/js/453.a12ea0c4.chunk.js",
     "static/media/pedagoga1.jpg": "/neurosignificar/static/media/pedagoga1.ccd4894efc62ebd9f2bf.jpg",
     "static/media/aba2.jpg": "/neurosignificar/static/media/aba2.674cc38e1c3973b03d13.jpg",
@@ -27,12 +27,12 @@
     "static/media/sala1.jpeg": "/neurosignificar/static/media/sala1.a7422a3ef57eaab984cd.jpeg",
     "static/media/sala2.jpeg": "/neurosignificar/static/media/sala2.bc5a6a6b47bc9cd461b7.jpeg",
     "index.html": "/neurosignificar/index.html",
-    "main.b5eefbce.css.map": "/neurosignificar/static/css/main.b5eefbce.css.map",
-    "main.901cadcf.js.map": "/neurosignificar/static/js/main.901cadcf.js.map",
+    "main.5dcb81c1.css.map": "/neurosignificar/static/css/main.5dcb81c1.css.map",
+    "main.ba0249ca.js.map": "/neurosignificar/static/js/main.ba0249ca.js.map",
     "453.a12ea0c4.chunk.js.map": "/neurosignificar/static/js/453.a12ea0c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5eefbce.css",
-    "static/js/main.901cadcf.js"
+    "static/css/main.5dcb81c1.css",
+    "static/js/main.ba0249ca.js"
   ]
 }
